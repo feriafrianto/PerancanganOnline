@@ -27,7 +27,7 @@ class CategoriesController extends Controller
 
     public function store(Request $request)
     {
-        //Simpan datab ke database    
+        //Simpan data ke database    
         Categories::create([
             'name' => $request->name
         ]);

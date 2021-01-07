@@ -17,9 +17,4 @@ class WelcomeController extends Controller
         );
         return view('user.welcome',$data);
     }
-
-    public function kontak()
-    {
-        return view('user.kontak');
-    }
 }

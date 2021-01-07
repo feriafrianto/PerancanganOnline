@@ -69,6 +69,6 @@ class AlamatController extends Controller
             'user_id'   => \Auth::user()->id
         ]);
         
-        return redirect()->route('user.alamat');
+        return redirect()->route('user.keranjang');
     }
 }

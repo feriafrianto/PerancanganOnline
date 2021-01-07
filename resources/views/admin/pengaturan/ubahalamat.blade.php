@@ -6,13 +6,6 @@
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>
                 </span> Alamat Toko </h3>
-              <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                  </li>
-                </ul>
-              </nav>
             </div>
             <div class="row">
               <div class="col-12 grid-margin">
@@ -57,8 +50,6 @@ var toHtml = (tag, value) => {
 	$(tag).html(value);
 	}
  $(document).ready(function() {
-    //  $('#province_id').select2();
-    //  $('#cities_id').select2();
      $('#province_id').on('change',function(){
      var id = $('#province_id').val();
      var url = window.location.href;

@@ -6,13 +6,6 @@
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>
                 </span> Produk </h3>
-              <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                  </li>
-                </ul>
-              </nav>
             </div>
             <div class="row">
               <div class="col-12 grid-margin">
@@ -23,7 +16,7 @@
                       <h4 class="card-title">Data Produk</h4>
                       </div>
                       <div class="col text-right">
-                      <a href="{{ route('admin.product.tambah') }}" class="btn btn-primary">Tambah</a>
+                      <a href="{{ route('admin.product.tambah') }}" class="btn btn-primary">Tambah Produk <i class="mdi mdi-plus menu-icon"></i></a>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -53,7 +46,7 @@
                                 <td align="center">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                   <a href="{{ route('admin.product.edit',['id'=>$product->id]) }}" class="btn btn-warning btn-sm">
-                                    <i class="mdi mdi-tooltip-edit"></i>
+                                    <i class="mdi mdi-pencil-box"></i>
                                   </a>
                                   <a href="{{ route('admin.product.delete',['id'=>$product->id]) }}" onclick="return confirm('Yakin Hapus data')" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-delete-forever"></i>

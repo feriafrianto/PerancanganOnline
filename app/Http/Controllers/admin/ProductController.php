@@ -95,7 +95,7 @@ class ProductController extends Controller
 
     public function delete($id)
     {
-        //mengahapus produk
+        //menghapus produk
         $prod = Product::findOrFail($id);
         Product::destroy($id);
         Storage::delete('public/'.$prod->image);

@@ -16,7 +16,7 @@
 
 
     <link rel="stylesheet" href="{{ asset('shopper') }}/css/aos.css">
-
+    <link rel="shortcut icon" href="{{ asset('shopper') }}/images/favicon.png" />
     <link rel="stylesheet" href="{{ asset('shopper') }}/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
   </head>
@@ -55,9 +55,6 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="{{ route('user.alamat') }}">Pengaturan Alamat</a>
-                                <a class="dropdown-item" href="#">Pengaturan Akun</a>
-                                <a class="dropdown-item" href="#">
-                                
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                   onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
@@ -125,7 +122,6 @@
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li class="{{ Request::path() === '/' ? '' : '' }}"><a href="{{ route('home') }}">Beranda</a></li>
             <li class="{{ Request::path() === 'produk' ? '' : '' }}"><a href="{{ route('user.produk') }}">Produk</a></li>
-            <li class="{{ Request::path() === 'kontak' ? '' : '' }}"><a href="{{ route('kontak') }}">Kontak</a></li>
           </ul>
         </div>
       </nav>
@@ -143,24 +139,8 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <ul class="list-unstyled">
-                  <li><a href="#">Sell online</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Shopping cart</a></li>
-                  <li><a href="#">Store builder</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <ul class="list-unstyled">
-                  <li><a href="#">Mobile commerce</a></li>
-                  <li><a href="#">Dropshipping</a></li>
-                  <li><a href="#">Website development</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <ul class="list-unstyled">
-                  <li><a href="#">Point of sale</a></li>
-                  <li><a href="#">Hardware</a></li>
-                  <li><a href="#">Software</a></li>
+                  <li><a href="#">Beranda</a></li>
+                  <li><a href="#">Produk</a></li>
                 </ul>
               </div>
             </div>
@@ -169,20 +149,10 @@
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">Jalan sukses menuju dunia akhirat</li>
-                <li class="phone"><a href="tel://23923929210">+62 3392 3929 210</a></li>
-                <li class="email">sport@gmail.com</li>
+                <li class="address">Desa Karanganom Kecamatan Kauman Kabupaten Tulungagung</li>
+                <li class="phone"><a href="tel://23923929210">+62 858 5352 0984</a></li>
+                <li class="email">perancangan.online@gmail.com</li>
               </ul>
-            </div>
-
-            <div class="block-7">
-              <form action="#" method="post">
-                <label for="email_subscribe" class="footer-heading">Subscribe</label>
-                <div class="form-group">
-                  <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
-                  <input type="submit" class="btn btn-sm btn-primary" value="Send">
-                </div>
-              </form>
             </div>
           </div>
         </div>

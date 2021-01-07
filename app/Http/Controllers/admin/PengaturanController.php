@@ -29,7 +29,7 @@ class PengaturanController extends Controller
     public function getCity($id)
     {
 
-        //kfunction untuk mengambil data kota sesuia id parameter
+        //kfunction untuk mengambil data kota sesuai id parameter
         $city = City::where('province_id',$id)->get();
         //lalu return dengan format json
         return response()->json($city); 

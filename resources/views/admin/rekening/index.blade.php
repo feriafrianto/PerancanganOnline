@@ -6,13 +6,6 @@
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>
                 </span> Rekening </h3>
-              <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                  </li>
-                </ul>
-              </nav>
             </div>
             <div class="row">
               <div class="col-12 grid-margin">
@@ -23,7 +16,7 @@
                       <h4 class="card-title">Data Rekening</h4>
                       </div>
                       <div class="col text-right">
-                      <a href="{{ route('admin.rekening.tambah') }}" class="btn btn-primary">Tambah</a>
+                      <a href="{{ route('admin.rekening.tambah') }}" class="btn btn-primary">Tambah No Rekening</a>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -47,7 +40,7 @@
                                 <td align="center">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                   <a href="{{ route('admin.rekening.edit',['id'=>$rek->id]) }}" class="btn btn-warning btn-sm">
-                                    <i class="mdi mdi-tooltip-edit"></i>
+                                    <i class="mdi mdi-pencil-box"></i>
                                   </a>
                                   <a href="{{ route('admin.rekening.delete',['id'=>$rek->id]) }}" onclick="return confirm('Yakin Hapus data')" class="btn btn-danger btn-sm">
                                     <i class="mdi mdi-delete-forever"></i>
